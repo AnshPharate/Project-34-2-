@@ -24,11 +24,11 @@ function setup() {
   mConstraint = MouseConstraint.create(engine, options);
   World.add(world, mConstraint);
 
-  pendulum1 = new Pendulum(340, 450, "#00b0ff");
-  pendulum2 = new Pendulum(400, 450, "#e91e63");
-  pendulum3 = new Pendulum(460, 450, "#ffc107");
-  pendulum4 = new Pendulum(520, 450, "#e91e63");
-  pendulum5 = new Pendulum(580, 450, "#00b0ff");
+  pendulum1 = new Pendulum(340, 450, "blue");
+  pendulum2 = new Pendulum(400, 450, "red");
+  pendulum3 = new Pendulum(460, 450, "white");
+  pendulum4 = new Pendulum(520, 450, "pink");
+  pendulum5 = new Pendulum(580, 450, "green");
 
   sling1 = new Sling(pendulum1.body, { x: 340, y: 200 });
   sling2 = new Sling(pendulum2.body, { x: 400, y: 200 });
