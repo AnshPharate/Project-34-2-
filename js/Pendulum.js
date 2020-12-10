@@ -10,7 +10,6 @@ class Pendulum {
     this.body = Bodies.rectangle(x, y, 40, 40, options);
     this.x = x;
     this.y = y;
-    this.color = color;
     World.add(world, this.body);
   }
   display() {
@@ -20,7 +19,7 @@ class Pendulum {
     translate(pos.x, pos.y);
     rotate(angle);
     noStroke();
-    fill(this.color);
+    fill("cyan");
     ellipse(0, 0, 60, 60);
     pop();
   }
